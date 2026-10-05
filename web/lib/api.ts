@@ -17,7 +17,7 @@ type TokenResponse = {
   token_type: string
 }
 
-const API_URL = (process.env.LAVALUST_API_URL || "http://localhost:3001/api").replace(/\/$/, "")
+const API_URL = (process.env.LAVALUST_API_URL || "https://gonzales-resty-lavalust-act6.onrender.com/api").replace(/\/$/, "")
 const SESSION_KEY = "stockroom.session"
 
 async function request(url: string, options: RequestInit = {}) {
